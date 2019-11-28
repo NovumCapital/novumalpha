@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="166" height="166" viewBox="0 0 166 166">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8ab6ff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="Ellipse_1" x="0" y="0" width="166" height="166" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feFlood flood-color="#003187" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_20" data-name="Group 20" transform="translate(-877 -750)">
+    <g transform="matrix(1, 0, 0, 1, 877, 750)" filter="url(#Ellipse_1)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="23" cy="23" r="23" transform="translate(60 40)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="_" data-name="" transform="translate(951.5 813.5) rotate(90)" fill="#3c70c6" font-size="22" font-family="FontAwesome5ProRegular, "Font Awesome 5 Pro""><tspan x="-9.625" y="0"></tspan></text>
+  </g>
+</svg>

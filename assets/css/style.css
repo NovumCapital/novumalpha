@@ -1,0 +1,46 @@
+body
+{
+	font-family: 'Rubik', sans-serif;
+}
+
+hr {
+    height: 1px;
+}
+
+.w-30 {
+    max-width: 30%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.base-color {
+    color: rgb(60,112,198);
+}
+
+.section-title {
+    color: rgb(60,112,198);
+    font-size: 30px;
+}
+
+.media-item {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding:20px;
+    background: #fff;
+}
+
+@media (min-width: 992px) { .media-item { min-height: 160px;} }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

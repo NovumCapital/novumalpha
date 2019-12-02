@@ -3,16 +3,36 @@ body
 	font-family: 'Rubik', sans-serif;
 }
 
+header {
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
 hr {
     height: 1px;
+}
+
+.fs-2 {
+    font-size: 80%;
 }
 
 .w-30 {
     max-width: 30%;
 }
 
+.font-weight-medium {
+    font-weight: 500;
+}
+
 .bg-white {
     background-color: white;
+}
+
+.bg-footer {
+    background-color: rgb(0,49,135);
+}
+
+.bg-base {
+    background-color: rgb(60,112,198);
 }
 
 .base-color {
@@ -24,12 +44,21 @@ hr {
     font-size: 30px;
 }
 
-.media-item {
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    padding:20px;
-    background: #fff;
+.table-info-my {
+    background-color: rgb(237, 244, 255);
 }
+
+table.table-bordered{
+    border:1px solid rgb(196, 227, 248);
+}
+table.table-bordered > thead > tr > th{
+    border:1px solid rgb(196, 227, 248);
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid rgb(196, 227, 248);
+}
+
+
 
 @media (min-width: 992px) { .media-item { min-height: 160px;} }
 

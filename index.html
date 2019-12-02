@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +12,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	
-	<script type="text/javascript" src="assets/js/my.js?version=20190919"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+	<script type="text/javascript" src="assets/js/my.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
 </head>
-<body style="font-family: Rubik;">
+
+<body><div id="app">
 	<header class="container-fluid sticky-top bg-white">
 		<nav class="navbar navbar-expand-md navbar-light">
 		    <a href="/" class="navbar-brand">
@@ -38,11 +40,23 @@
 				      <a class="nav-link" href="#insight">Insights</a>
 				    </li>
 				    <li class="nav-item mx-3">
-				      <a class="nav-link" href="#about">About</a>
+				      <a class="nav-link" href="about.html">About</a>
 				    </li>
 				    <li class="nav-item mx-3">
 				      <a class="nav-link" href="contact.html">Contact</a>
 				    </li>
+				    <li class="nav-item mx-3">
+				    	<div class="dropdown">
+						  <a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Site
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <a class="dropdown-item" href="listing.html">Listing</a>
+						    <a class="dropdown-item" href="strategy.html">Strategy</a>
+						    <a class="dropdown-item" href="ethereum.html">Ethereum</a>
+						  </div>
+						</div>
+		        	</li>
 		        </ul>
 		    </div>
 		</nav>
@@ -190,10 +204,10 @@
 	</section>
 
 		
-	<footer style="background-color: rgb(0,49,135);">
+	<footer class="bg-footer">
 		<div class="row py-lg-4 px-lg-5">
 			<div class="col-lg-4 text-center py-3 py-lg-0">
-				<p class="text-secondary mb-0">Copyright 2019 @Novum Alpha. All rights reserved.</p>
+				<p class="text-secondary mb-0">{{ text_copyright }}</p>
 			</div>
 
 			<div class="col-lg-3 text-center py-3 py-lg-0">
@@ -202,12 +216,13 @@
 				<a target="_blank" href="https://medium.com/altotoken"><img style="width:auto;" class="mx-3" src="assets/images/Medium.png" alt="Medium" /> </a>
 			</div>
 
-			<a class="col-lg-2 text-secondary text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >Terms of Services</a>
+			<a class="col-lg-2 text-secondary text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >{{ text_term }}</a>
 			<div class="border-right border-secondary d-none d-lg-block" style="width: 5px; height: 20px;"></div>
-			<a class="col-lg-2 text-secondary text-lg-left text-center py-1 py-lg-0" href="privacy.html">Privacy Policy</a>
+			<a class="col-lg-2 text-secondary text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
 		</div>
 	</footer>
-</body>
+
+</div></body>
 <!-- slick slider js -->
 
 </html>

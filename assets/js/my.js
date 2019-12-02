@@ -48,15 +48,26 @@ function makeTimer() {
 
 
 $(document).ready(function() {
+	//////////////////////////////////////////////VUE
+	var app = new Vue({
+  	el: '#app',
+  		data: {
+    		text_term: 'Term of Services',
+    		text_policy: 'Privacy Policy',
+    		text_copyright: 'Copyright 2019 @Novum Alpha. All rights reserved.',
+  		}
+	});
+
+	////////////////////////////////nav
 	var url = document.location.href;
 	if (url.indexOf('#') > 0) {
 		var activeEl = url.substring(url.indexOf('#') + 1, url.length);
-		$('.navbar-nav li').removeClass('active');
-		$('a[href^="#' + activeEl + '"]').parent().addClass('active');
+		$('header .navbar-nav li').removeClass('active');
+		$('header a[href^="#' + activeEl + '"]').parent().addClass('active');
 	}
 
-	$(".nav-item .nav-link").on("click", function(){
-	   $(".navbar").find(".active").removeClass("active");
+	$("header .nav-item .nav-link").on("click", function(){
+	   $("header .navbar").find(".active").removeClass("active");
 	   $(this).addClass("active");
 	});
 });

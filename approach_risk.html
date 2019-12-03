@@ -13,6 +13,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"> -->
 	
 	<script type="text/javascript" src="assets/js/my.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
@@ -30,118 +32,111 @@
 
 		    <div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar3">
 		        <ul class="navbar-nav">
-		         	<li class="nav-item mx-3">
-				      <a class="nav-link" href="index.html#approach">Approach</a>
-				    </li>
-				    <li class="nav-item mx-3">
-				      <a class="nav-link" href="index.html#product">Product</a>
-				    </li>
-				     <li class="nav-item mx-3">
-				      <a class="nav-link" href="index.html#insight">Insights</a>
-				    </li>
-				    <li class="nav-item mx-3 active">
-				      <a class="nav-link" href="about.html#about">About</a>
-				    </li>
-				    <li class="nav-item mx-3">
-				      <a class="nav-link" href="contact.html">Contact</a>
+		         	<li class="nav-item mx-3 active">
+		         		<div class="dropdown">
+						  <a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Approach
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <a class="dropdown-item" href="approach_strategy.html">Strategy</a>
+						    <a class="dropdown-item" href="approach_risk.html">Risk Management</a>
+						    <a class="dropdown-item" href="approach_cyber.html">Cybersecurity</a>
+						    <a class="dropdown-item" href="approach_research.html">Research</a>
+						  </div>
+						</div>
 				    </li>
 				    <li class="nav-item mx-3">
 				    	<div class="dropdown">
 						  <a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Site
+						    Products
 						  </a>
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						    <a class="dropdown-item" href="listing.html">Listing</a>
-						    <a class="dropdown-item" href="strategy.html">Strategy</a>
-						    <a class="dropdown-item" href="ethereum.html">Ethereum</a>
+						    <a class="dropdown-item" href="product_listing.html">Listing</a>
+						    <a class="dropdown-item" href="product_bitcoin.html">Bitcoin</a>
+						    <a class="dropdown-item" href="product_ethereum.html">Ethereum</a>
 						  </div>
 						</div>
-		        	</li>
+				    </li>
+				     <li class="nav-item mx-3">
+				      <a class="nav-link" href="insight.html">Insights</a>
+				    </li>
+				    <li class="nav-item mx-3">
+				      <a class="nav-link" href="about.html">About</a>
+				    </li>
+				    <li class="nav-item mx-3">
+				      <a class="nav-link" href="contact.html">Contact</a>
+				    </li>
 		        </ul>
 		    </div>
 		</nav>
 	</header>
 
-	<p class="text-white text-center p-3 bg-footer my-0">Listing & Liquidity Management</p>
+	<p class="text-white text-center p-3 bg-footer my-0">Risk Management</p>
 
 	<!-- <script type="text/javascript" src="https://app.sgwidget.com/js/sg-widget.js"></script> -->
 
-	<section class="bg-light py-5">
+	<section class="bg-light py-5 text-left">
 		<div class="container">
-			<h3 class="section-title mb-5">The Key to Confidence is Effective Management</h3>
-			<p>There is nothing more critical to the success of your Initial Coin Offering (ICO) or your Security Token Offering (STO) than the liquidity of your digital tokens on the exchanges which you have worked hard to list them on.</p>
+			<h3 class="section-title mb-5">Enhancing Performance by Managing Risk</h3>
+			<p class="text-body">Despite the unprecedented opportunities in cryptocurrencies, the nascent digital assets also present a suite of risks that traders are only just coming to terms with.</p>
 
-			<p>Because we are traders first, we understand how to provide appropriate and situation-specific listing and liquidity management services to ensure the continued success of your project as well as sustained interest in your digital token offering.</p>
+			<p class="text-body">With almost a decade of experience navigating and actively trading cryptocurrencies, our team provides a depth of experience in managing these myriad risks to deliver consistent, uncorrelated and market agnostic returns.</p>
 
-			<p>We also offer a comprehensive suite of management tools for exchange operators to ensure reliable, timely and market-oriented liquidity.</p>
+			<p class="text-body">Leveraging data science tools, we have developed proprietary active risk management and monitoring programs that analyze trading-related risks, portfolio concentration and overall performance, 24 hours a day, 7 days a week, 365 days a year to ensure programmatic, systematic and automated trading stops to preserve portfolio integrity and enhance performance.</p>
 		</div>
 	</section>
 
 	<section  id="visit-us" class="py-3">
 		<div class="container">
-			<div class="row text-center my-5">
-				<div class="col-lg-6 my-3">
-					<p class="base-color font-weight-medium text-left mb-3">Trade Volume</p>
-					<div class="content text-left">
-						<p class="text-secondary">Liquidity is key to ensuring continued interest in any ICO, as well as creating opportunities for future growth,</p>
-
-						<p class="text-secondary">In order to facilitate the longevity of your digital assets, automated trading algorithms provide bid-ask spreads and market depth across exchanges and within exchanges across numerous major cryptocurrencies.</p>
-
-						<p class="text-secondary">Automated trading algorithms provide dynamic bid-ask spreads and market depth to facilitate liquidity for buy/sell orders.</p>
+			<div class="border rounded p-3 my-3">
+				<a href="#demo" data-toggle="collapse">
+					<div class="row mx-0 align-items-center">
+						<img class="img-fluid mr-2" style="width: 16px; height: 16px;" src="assets/images/icon-plus.png">
+						<p class="base-color mb-0">Trade Profit & Loss</p>
 					</div>
+				</a>
+
+				<div id="demo" class="collapse mt-3">
+					<p class="text-body">Trade Profit & Loss algorithms use mark-to-market valuations of open contracts with realized profit and loss, providing intraday insight into actual portfolio performance, split up in strategy types, instruments and any other dimension required by our traders.</p>
 				</div>
-				<div class="col-lg-6 my-3">
-					<img class="img-fluid" src="assets/images/listing_trading.png">
+			</div>
+			<div class="border rounded p-3 my-3">
+				<a href="#dem2" data-toggle="collapse">
+					<div class="row mx-0 align-items-center">
+						<img class="img-fluid mr-2" style="width: 16px; height: 16px;" src="assets/images/icon-plus.png">
+						<p class="base-color mb-0">Max Drawdown</p>
+					</div>
+				</a>
+
+				<div id="dem2" class="collapse mt-3">
+						
+				</div>
+			</div>
+			<div class="border rounded p-3 my-3">
+				<a href="#demo3" data-toggle="collapse">
+					<div class="row mx-0 align-items-center">
+						<img class="img-fluid mr-2" style="width: 16px; height: 16px;" src="assets/images/icon-plus.png">
+						<p class="base-color mb-0">Limit Structures</p>
+					</div>
+				</a>
+
+				<div id="demo3" class="collapse mt-3">
+					
 				</div>
 			</div>
 
-			<div class="row text-center my-5">
-				<div class="col-lg-6 my-3">
-					<img class="img-fluid" src="assets/images/listing_order_book.png">
-				</div>
-				<div class="col-lg-6 my-3">
-					<p class="base-color font-weight-medium text-left mb-3">Order Book Depth</p>
-					<div class="content text-left">
-						<p class="text-secondary">Order book depth is carefully managed against the backdrop of dynamic market conditions, price movements and trading bands to achieve targeted outcomes.</p>
-
-						<p class="text-secondary">Automated algorithms provide 24/7 market depth and are constantly monitoring trading behavior, responding to liquidity events, price movements and stabilization criteria to ensure seamless and orderly trading operations, particularly in times of extreme market volatility.</p>
-
-						<p class="text-secondary">We deploy multiple algorithms to mitigate price and volume dislocations, ensuring tight spreads, liquidity and continuous trading.</p>
+			<div class="border rounded p-3 my-3">
+				<a href="#demo4" data-toggle="collapse">
+					<div class="row mx-0 align-items-center">
+						<img class="img-fluid mr-2" style="width: 16px; height: 16px;" src="assets/images/icon-plus.png">
+						<p class="base-color mb-0">Execution-To-Modal</p>
 					</div>
+				</a>
+
+				<div id="demo4" class="collapse mt-3">
+					
 				</div>
 			</div>
-
-			<div class="row text-center my-5">
-				<div class="col-lg-6 my-3">
-					<p class="base-color font-weight-medium text-left mb-3">Hedging Offset</p>
-					<div class="content text-left">
-						<p class="text-secondary">Inventory and exposure must be carefully managed and at times, order book depth may create trade orders which exceed exchange-allocated inventory balances, resulting in unnecessary volatility.</p>
-
-						<p class="text-secondary">To ensure smooth and orderly market operations, a suite of hedging tools are deployed to minimize inventory risk and portfolio exposure.</p>
-
-						<p class="text-secondary">Active hedging requires a holistic overview of outstanding market positions as well as internal client positions, to ensure that risks are comprehensively catered for under all market conditions.</p>
-					</div>
-				</div>
-				<div class="col-lg-6 my-3">
-					<img class="img-fluid" src="assets/images/listing_heading.png">
-				</div>
-			</div>
-
-
-			<div class="row text-center my-5">
-				<div class="col-lg-6 my-3">
-					<img class="img-fluid" src="assets/images/listing_exchange.png">
-				</div>
-				<div class="col-lg-6 my-3">
-					<p class="base-color font-weight-medium text-left mb-3">Exchange Stabilization</p>
-					<div class="content text-left">
-						<p class="text-secondary">Because digital assets have the freedom to be traded both on authorized exchanges as well as those without which permission has been granted, it is critical to the success of your company to ensure active management across multiple platforms to prevent arbitraging.</p>
-
-						<p class="text-secondary">Depending on your specific goals, our experience integrating with a variety of platforms ensures capability and consistency across a variety of venues to ensure the effective management of your digital assets in managing, leveraging or containing volatility and arbitrage opportunities.</p>
-					</div>
-				</div>
-			</div>
-			
 		</div>
 	</section>
 
@@ -206,6 +201,7 @@
 			</div>
 		</div>
 	</section>
+
 		
 	<footer class="bg-footer">
 		<div class="row py-lg-4 px-lg-5">
@@ -224,6 +220,18 @@
 			<a class="col-lg-2 text-secondary text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".collapse").on('show.bs.collapse', function(){
+				var e1 = $(this).parent().find("img").attr("src", 'assets/images/icon-minus.png');
+	  		});
+	  		$(".collapse").on('hide.bs.collapse', function(){
+				var e1 = $(this).parent().find("img").attr("src", 'assets/images/icon-plus.png');
+	  		});
+		});
+	</script>
+
 		
 </div></body>
 

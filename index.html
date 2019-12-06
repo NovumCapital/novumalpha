@@ -16,61 +16,86 @@
 
 	<script type="text/javascript" src="assets/js/my.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+
+	<style>
+
+		#cookie-popup {
+			position: fixed; 
+			bottom:60px;
+			left: 50%;
+			z-index: 400;
+		}
+
+		.cookie-content {
+			position: relative; 
+			background: #fff;
+			box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+			left: -50%;
+			/*width: 800px;*/
+			margin: auto auto;
+			padding: 50px 25px;
+			border-radius: 5px;
+			text-align: center;
+		}
+	</style>
+
 </head>
 
 <body><div id="app">
 	
 	<header class="container-fluid sticky-top bg-white">
-		<nav class="navbar navbar-expand-md navbar-light">
-			<a href="index.html" class="navbar-brand">
-				<img src="assets/images/logo.svg" alt="Novum Alpha">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<div class="col-lg-8 mx-lg-auto">
+			<nav class="navbar navbar-expand-md navbar-light justify-content-center">
+				<a href="index.html" class="navbar-brand py-4 mr-5">
+					<img class=" " src="assets/images/logo.svg" alt="Novum Alpha">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar3">
-				<ul class="navbar-nav">
-					<li id="approach" class="nav-item mx-3">
-						<div class="dropdown">
-							<a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Approach
-							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="approach_strategy.html">Strategy</a>
-								<a class="dropdown-item" href="approach_risk.html">Risk Management</a>
-								<a class="dropdown-item" href="approach_cyber.html">Cybersecurity</a>
-								<a class="dropdown-item" href="approach_research.html">Research</a>
+				<div class="ml-5 navbar-collapse collapse justify-content-start" id="collapsingNavbar3">
+					<ul class="navbar-nav mr-auto">
+						<li id="approach" class="nav-item mx-lg-3">
+							<div class="dropdown">
+								<a class="btn dropdown-toggle text-secondary menu" href="#" role="button" id="dropdownMenuLinkApproach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									APPROACH
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="approach_strategy.html">Strategy</a>
+									<a class="dropdown-item" href="approach_risk.html">Risk Management</a>
+									<a class="dropdown-item" href="approach_cyber.html">Cybersecurity</a>
+									<a class="dropdown-item" href="approach_research.html">Research</a>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li id="product" class="nav-item mx-3">
-						<div class="dropdown">
-							<a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Products
-							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="product_listing.html">Listing</a>
-								<a class="dropdown-item" href="product_bitcoin.html">Bitcoin</a>
-								<a class="dropdown-item" href="product_ethereum.html">Ethereum</a>
+						</li>
+						<li id="product" class="nav-item mx-lg-3">
+							<div class="dropdown">
+								<a class="btn dropdown-toggle text-secondary menu" href="#" role="button" id="dropdownMenuLinkProduct" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									PRODUCTS
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="product_listing.html">Listing</a>
+									<a class="dropdown-item" href="product_bitcoin.html">Bitcoin</a>
+									<a class="dropdown-item" href="product_ethereum.html">Ethereum</a>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li id="insight" class="nav-item mx-3">
-						<a class="nav-link" href="insight.html">Insights</a>
-					</li>
-					<li id="about" class="nav-item mx-3">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li id="contact" class="nav-item mx-3">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+						</li>
+						<li id="insight" class="nav-item mx-3">
+							<a class="nav-link menu" href="insight.html">INSIGHTS</a>
+						</li>
+						<li id="about" class="nav-item mx-3">
+							<a class="nav-link menu" href="about.html">ABOUT</a>
+						</li>
+						<li id="contact" class="nav-item mx-3">
+							<a class="nav-link menu" href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</header>
 
-	<section id="approach" class="pb-5" style="background-image: url('assets/images/background.png'); background-repeat:no-repeat;background-position: left top; background-size: 100% 100%;">
+	<section id="approach" class="pb-5" style="background-image: url('assets/images/background.png'); background-repeat:no-repeat;background-position: left top; background-size: 100% 100%">
 		<h3 class="text-white text-center" style="font-size: 50px; padding-top: 5rem;">TECHNOLOGY</h3>
 		<p class="text-white text-center" style="font-size: 25px;">THAT OPEN DOORS TO THE WORLD</p>
 		<hr class="col-1 bg-white" />
@@ -145,44 +170,48 @@
 		</div>
 	</section>
 
-	<section id="insight" class="">
-		<div id="">
-			<div class="container">
-				<div class="row justify-content-center"><div class=""></div></div>
-				<!-- .row -->
-				<div class="row justify-content-lg-center" style="margin-top: 6rem;">
-					<div class="col-lg-8 col-lg-12">
-						<div class="media-content text-center mb-5">
-							<h2 class="section-title">Latest Insights</h2>
-						</div>
+	<div class="py-5 strip my-5">
+		<div class="container align-middle">
+			<div class="row text-center align-items-center justify-content-center">
+				<p class="text-white my-0 col-lg-6 text-lg-left my-1" style="font-size: 24px;">THE FUTURE OF WEALTH IS DIGITAL</p>
+				<a class="btn btn-primary col-4 col-lg-2 my-1" href="product_listing.html">FIND OUT MORE</a>
+			</div>
+		</div>
+	</div>
+
+	<section id="insight" class="pt-3">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-lg-8 col-lg-12">
+					<div class="media-content text-center mb-5">
+						<h2 class="section-title">Latest Insights</h2>
 					</div>
 				</div>
+			</div>
 
-				<div class="row text-center justify-content-center">
-					<div class="col-lg-4 py-3">
-						<img class="px-1" src="assets/images/insight1.svg" width="100%" />
-						<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
-						<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
-						<p class="text-secondary">Jul 20, 2019</p>
-					</div>
-					<div class="col-lg-4 py-3">
-						<img class="px-1" src="assets/images/insight1.svg" width="100%" />
-						<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
-						<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
-						<p class="text-secondary">Jul 20, 2019</p>
-					</div>
-					<div class="col-lg-4 py-3">
-						<img class="px-1" src="assets/images/insight1.svg" width="100%" />
-						<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
-						<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
-						<p class="text-secondary">Jul 20, 2019</p>
-					</div>
+			<div class="row text-center justify-content-center">
+				<div class="col-lg-4 py-3">
+					<img class="px-1" src="assets/images/insight1.svg" width="100%" />
+					<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+					<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
+					<p class="text-secondary">Jul 20, 2019</p>
 				</div>
-
-				<div class="row justify-content-center mb-5">
-					<button class="mt-3" style="color: white; background-color: rgb(60,112,198); border-radius: 4px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;">Keep on Reading</button>	
+				<div class="col-lg-4 py-3">
+					<img class="px-1" src="assets/images/insight1.svg" width="100%" />
+					<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+					<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
+					<p class="text-secondary">Jul 20, 2019</p>
 				</div>
+				<div class="col-lg-4 py-3">
+					<img class="px-1" src="assets/images/insight1.svg" width="100%" />
+					<p class="text-dark font-weight-bold mt-3">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+					<p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi purus, cursus quis eleifend ut, suscipit at est. Cras sapien mi, molestie eu nisi eget, pharetra rhoncu...</p>
+					<p class="text-secondary">Jul 20, 2019</p>
+				</div>
+			</div>
 
+			<div class="row justify-content-center mb-5">
+				<button class="mt-3 bg-base text-white" style="border-radius: 4px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px;">Keep on Reading</button>	
 			</div>
 		</div>
 		<div class="row justify-content-center" style="margin-top: 30px;"><div class="" style="background-color: white;"></div></div>
@@ -212,9 +241,8 @@
 		</div>
 	</section>
 
-
 	<footer class="bg-footer">
-		<div class="row py-lg-4 px-lg-5">
+		<div class="row py-lg-4 mx-0 justify-content-center">
 			<div class="col-lg-4 text-center py-3 py-lg-0">
 				<p class="text-secondary mb-0">{{ text_copyright }}</p>
 			</div>
@@ -225,11 +253,36 @@
 				<a target="_blank" href="https://medium.com/altotoken"><img style="width:auto;" class="mx-3" src="assets/images/Medium.png" alt="Medium" /> </a>
 			</div>
 
-			<a class="col-lg-2 text-secondary text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >{{ text_term }}</a>
+			<a class="col-lg-2 text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >{{ text_term }}</a>
 			<div class="border-right border-secondary d-none d-lg-block" style="width: 5px; height: 20px;"></div>
-			<a class="col-lg-2 text-secondary text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
+			<a class="col-lg-2 text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
 		</div>
 	</footer>
-</div></body>
 
-</html>
+	<div id="cookie-popup">
+		<div class="cookie-content">
+			<h3>Cookies Law</h3>
+			<br>
+			<p>This website uses cookies to ensure you get the best experience on our website. By continuing to browse the site you are agreeing to this policy, you consent to our use of cookies.</p>
+			<br><br>
+			<button class="btn btn-primary px-5" href="#" onclick="document.getElementById('cookie-popup').style.display='none';return false;">OK</a>
+			</div>
+		</div>
+
+		<!-- Add magnifique popup --> 
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.open-popup-link').magnificPopup({
+					type:'inline',
+					midClick: true,
+			  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+
+			});
+			}
+		</script>
+
+		
+	</div></body>
+
+	</html>

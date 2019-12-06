@@ -22,56 +22,62 @@
 
 <body><div id="app">
 	<header class="container-fluid sticky-top bg-white">
-		<nav class="navbar navbar-expand-md navbar-light">
-			<a href="index.html" class="navbar-brand">
-				<img src="assets/images/logo.svg" alt="Novum Alpha">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<div class="col-lg-8 mx-lg-auto">
+			<nav class="navbar navbar-expand-md navbar-light justify-content-center">
+				<a href="index.html" class="navbar-brand py-4 mr-5">
+					<img class=" " src="assets/images/logo.svg" alt="Novum Alpha">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar3">
-				<ul class="navbar-nav">
-					<li id="approach" class="nav-item mx-3">
-						<div class="dropdown">
-							<a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Approach
-							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="approach_strategy.html">Strategy</a>
-								<a class="dropdown-item" href="approach_risk.html">Risk Management</a>
-								<a class="dropdown-item" href="approach_cyber.html">Cybersecurity</a>
-								<a class="dropdown-item" href="approach_research.html">Research</a>
+				<div class="ml-5 navbar-collapse collapse justify-content-start" id="collapsingNavbar3">
+					<ul class="navbar-nav mr-auto">
+						<li id="approach" class="nav-item mx-lg-3">
+							<div class="dropdown">
+								<a class="btn dropdown-toggle text-secondary menu" href="#" role="button" id="dropdownMenuLinkApproach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									APPROACH
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="approach_strategy.html">Strategy</a>
+									<a class="dropdown-item" href="approach_risk.html">Risk Management</a>
+									<a class="dropdown-item" href="approach_cyber.html">Cybersecurity</a>
+									<a class="dropdown-item" href="approach_research.html">Research</a>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li id="product" class="nav-item mx-3">
-						<div class="dropdown">
-							<a class="btn dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Products
-							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="product_listing.html">Listing</a>
-								<a class="dropdown-item" href="product_bitcoin.html">Bitcoin</a>
-								<a class="dropdown-item" href="product_ethereum.html">Ethereum</a>
+						</li>
+						<li id="product" class="nav-item mx-lg-3">
+							<div class="dropdown">
+								<a class="btn dropdown-toggle text-secondary menu" href="#" role="button" id="dropdownMenuLinkProduct" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									PRODUCTS
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<a class="dropdown-item" href="product_listing.html">Listing</a>
+									<a class="dropdown-item" href="product_bitcoin.html">Bitcoin</a>
+									<a class="dropdown-item" href="product_ethereum.html">Ethereum</a>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li id="insight" class="nav-item mx-3">
-						<a class="nav-link" href="insight.html">Insights</a>
-					</li>
-					<li id="about" class="nav-item mx-3">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li id="contact" class="nav-item mx-3">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+						</li>
+						<li id="insight" class="nav-item mx-3">
+							<a class="nav-link menu" href="insight.html">INSIGHTS</a>
+						</li>
+						<li id="about" class="nav-item mx-3">
+							<a class="nav-link menu" href="about.html">ABOUT</a>
+						</li>
+						<li id="contact" class="nav-item mx-3">
+							<a class="nav-link menu" href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</header>
 
-	<p class="text-white text-center p-3 bg-footer my-0">Strategies</p>
+	<div class="py-5 strip">
+		<div class="container">
+			<p class="text-white my-0">Strategies</p>
+		</div>
+	</div>
 
 	<!-- <script type="text/javascript" src="https://app.sgwidget.com/js/sg-widget.js"></script> -->
 
@@ -209,7 +215,7 @@
 	</section>
 
 	<footer class="bg-footer">
-		<div class="row py-lg-4 px-lg-5">
+		<div class="row py-lg-4 mx-0 justify-content-center">
 			<div class="col-lg-4 text-center py-3 py-lg-0">
 				<p class="text-secondary mb-0">{{ text_copyright }}</p>
 			</div>
@@ -220,9 +226,9 @@
 				<a target="_blank" href="https://medium.com/altotoken"><img style="width:auto;" class="mx-3" src="assets/images/Medium.png" alt="Medium" /> </a>
 			</div>
 
-			<a class="col-lg-2 text-secondary text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >{{ text_term }}</a>
+			<a class="col-lg-2 text-center text-lg-right pt-3 pb-1 py-lg-0" href="terms.html" >{{ text_term }}</a>
 			<div class="border-right border-secondary d-none d-lg-block" style="width: 5px; height: 20px;"></div>
-			<a class="col-lg-2 text-secondary text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
+			<a class="col-lg-2 text-lg-left text-center py-1 py-lg-0" href="privacy.html">{{ text_policy }}</a>
 		</div>
 	</footer>
 
@@ -234,6 +240,8 @@
 			$(".collapse").on('hide.bs.collapse', function(){
 				var e1 = $(this).parent().find("img").attr("src", 'assets/images/icon-plus.png');
 			});
+
+			$('#dropdownMenuLinkApproach').attr('style', 'color: #212529 !important');
 		});
 	</script>
 

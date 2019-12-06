@@ -58,6 +58,25 @@ table.table-bordered > tbody > tr > td{
     border:1px solid rgb(196, 227, 248);
 }
 
+.strip {
+    background-image: url("../images/strip.jpg");
+    background-color: rgb(245,245,245); 
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.strip p {
+    font-size: 40px;
+}
+
+.menu {
+    font-size: 19px;
+}
+
+a:hover {
+    color: white;
+}
+
 
 
 @media (min-width: 992px) { .media-item { min-height: 160px;} }

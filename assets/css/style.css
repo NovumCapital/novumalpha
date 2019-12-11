@@ -7,12 +7,25 @@ header {
     box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
 
+
+h1 {
+    font-size: 30px;
+}
+
 hr {
     height: 1px;
 }
 
 .fs-2 {
     font-size: 80%;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-20 {
+    font-size: 20px;
 }
 
 .w-30 {

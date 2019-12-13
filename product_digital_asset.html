@@ -152,8 +152,8 @@
 			<p class="base-color fs-20 text-center py-5">Novum Digital Asset Alpha Value of US$1,000 Invested (September 2018 - October 2019)</p>
 			
 			<div class="row" style="margin-top: -60px;">
-				<div class="col-lg-9" id="chart-area"></div>
-				<div class="col-lg-3" style="margin-top: 100px;">
+				<div class="col-lg-10" id="chart-area"></div>
+				<div class="col-lg-2" style="margin-top: 100px;">
 					<p>Key Documents:</p>
 					<a class="text-primary" href="assets/factsheet20191128.docx" download>FACTSHEET.docx<span class="ml-3"><i class="far fa-file-word"></i></span></a>
 				</div>
@@ -161,8 +161,8 @@
 
 			<p class="base-color fs-20 text-center my-5">Novum Digital Asset Alpha Backtest (January 2017 - October 2019)</p>
 			
-			<div class="row justify-content-center">
-				<div class="col-lg-9">
+			<div class="row">
+				<div class="col-lg-12">
 					<div id="chart-area2"></div>
 				</div>
 			</div>
@@ -377,11 +377,17 @@
 			return data;
 		}
 
+		/**
+		* data is array of object, each object has
+		* values: array of object(date,price)
+		* key/value (from csv)
+		*
+		*/
 		function buildChart(data, chartId) {
-
-			var width = 800;
-			var height = 300;
+			var width = 850;
+			var height = 400;
 			var margin = 100;
+			var marginHeight = 100;
 			var duration = 250;
 
 			var lineOpacity = "0.25";
@@ -410,18 +416,25 @@
 			.domain(d3.extent(data[0].values, d => d.date))
 			.range([0, width-margin]);
 
+
+			//yscale
+			var maxValue = d3.max(data[0].values, d => d.price);
+			data.forEach(function(obj) {
+				maxValue = Math.max(maxValue, d3.max(obj.values, d => d.price));
+			});
+
 			var yScale = d3.scaleLinear()
-			.domain([0, d3.max(data[0].values, d => d.price)])
-			.range([height-margin, 0]);
+			.domain([0, maxValue])
+			.range([height - marginHeight, 0]);
 
 			var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 			/* Add SVG */
 			var svg = d3.select(chartId).append("svg")
 			.attr("width", "100%")
-			.attr("height", (height+margin)+"px")
+			.attr("height", height + marginHeight + "px")
 			.append('g')
-			.attr("transform", `translate(${margin}, ${margin})`);
+			.attr("transform", `translate(${margin}, ${marginHeight})`);
 
 
 			/* Add line (a function) into SVG */
@@ -472,7 +485,6 @@
 				.style("stroke-width", lineStroke)
 				.style("cursor", "none");
 			});
-
 
 			/* Add circles in the line */
 			lines.selectAll("circle-group")
@@ -536,23 +548,17 @@
 		.attr("fill", "#000")
 		.text("US$");
 
-
-		console.log(data);
 		for (var i = 0; i < data.length; i++) {
 			var lineName = data[i].name;
 			svg.append("circle").attr("cx",60).attr("cy", 20 * (i + 1)).attr("r", 6).style("fill", color(i))
 			svg.append("text").attr("x", 80).attr("y", 20 * (i + 1)).text(lineName).style("font-size", "15px").attr("alignment-baseline","middle")
 		}
-		
-
 	}
-
-
-
 
 	$(document).ready(function(){
 		$('#dropdownMenuLinkProduct').attr('style', 'color: #212529 !important');
 	});
+
 </script>
 
 </div></body>
